@@ -1,0 +1,109 @@
+/* *********Approval & Request Page********* */
+.item{
+    margin-top: 1rem;
+}
+
+/* **********Fixed Assets Page********** */
+.head{
+    margin-top: 1rem;
+    /* justify-content: start!important; */
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+@media(max-width: 731px) {
+    .head{
+        text-align: center;
+    }
+    .completed,.payment{
+        margin-top: .5rem;
+    }
+    .table-btns{
+        flex-direction: column;
+    }
+ }
+
+ .table-btns{
+    display: flex;
+    gap: 1rem;
+ }
+
+ /* *********************Home Page ********************** */
+ .disposal-plus-icon{
+    display: flex;
+    align-items: center;
+ }
+ .disposal-section{
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    gap: 2rem;
+    align-items: center;
+ }
+ .my-form{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 4rem; */
+    width: 100%;
+    align-items: center;
+ }
+ .home-search-bar{
+    width: 100%;
+ }
+ .home-dropdown{
+    
+ }
+ @media(max-width:768px){
+    .navbar-nav {
+        display: block !important;
+    }
+ }
+ 
+
+ /* ***********************Dashbaord Page*************************** */
+ .content-wrapper{
+    background-color: #fff;
+    margin-top:2rem;
+ }
+
+ .template-form{
+    /* padding: 2rem; */
+    /* border: 2px solid black; */
+ }
+ .template-row{
+    display: flex;
+    
+ }
+ .template-col{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid red; */
+ }
+ .form-row{
+    /* border: 2px solid blue; */
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 1px solid #00000020;
+    border-radius: 0.8rem;
+    align-items: center;
+    /* gap: 2rem; */
+ }
+ 
+ .check-col{
+   display:flex;
+ }
+ .btn-row{
+   gap: 1rem;
+ }
+ @media(max-width:786px){
+    .template-col{
+        /* flex-direction: column; */
+        /* text-align: left; */
+        /* justify-content: start; */
+    }
+    .form-row{
+        /* flex-direction: column; */
+      
+    }
+ }

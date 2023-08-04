@@ -28,6 +28,12 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="stylesheet" href="additional-styles.css">
+  <link rel="stylesheet" href="styles/table-style.css">
+
+
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -154,7 +160,14 @@
 
             </li>
 
-
+            <li class="nav-item">
+              <a href="template.html" class="nav-link">
+                <p>
+                  Template Form
+                </p>
+              </a>
+              
+            </li>
 
           </ul>
         </nav>
@@ -168,15 +181,15 @@
 
       <div class="card">
         <div class="card-body">
-          <div class="row mt-lg-5 mb-lg-5">
-            <div class="col-md-4">
+          <div class="row  head justify-content-start">
+            <div class="col-md-4 text-center">
               <h4>Transfer of Assets</h4>
             </div>
-            <div class="col-md-4">
-              <i class="fa fa-bars text-danger "></i> VIEW COMPLETED</a>
+            <div class="col-md-4 text-center completed">
+              <i class=""></i><input type="radio"> VIEW COMPLETED</a>
             </div>
-            <div class="col-md-4">
-              <i class="fa fa-bars text-danger "></i> VIEW BY PAYMENT</a>
+            <div class="col-md-4 text-center payment">
+              <i class=""></i><input type="radio"> VIEW BY PAYMENT</a>
             </div>
           </div>
           <div class="row">
@@ -224,70 +237,40 @@
           <div class="card">
             <div class="card-header bg-white">All Transfer of Assets</div>
             <div class="card-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">Request No</th>
-                        <th scope="col">Type of Request</th>
-                        <th scope="col">Stage</th>
-                        <th scope="col">Country</th>
-                        <th scope="col">Logged Date</th>
-                        <th scope="col">AGE</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-
-                      <tr>
-                        <td><a href="" class="text-dark">COITEOFF-00655</a></td>
-                        <td>Html Document</td>
-                        <td>In Prpgress</td>
-                        <td>Namibia</td>
-                        <td>23-May 2023</td>
-                        <td>23 Days</td>
-                        <td><i class="fa fa-angle-right text-danger "></i></td>
-                      </tr>
-
-
-                      <tr>
-                        <td><a href="" class="text-dark">COITEOFF-00656</a></td>
-                        <td>Html Document</td>
-                        <td>In Prpgress</td>
-                        <td>Angola</td>
-                        <td>23-May 2023</td>
-                        <td>23 Days</td>
-                        <td><i class="fa fa-angle-right text-danger "></i></td>
-                      </tr>
-
-
-                      <tr>
-                        <td><a href="" class="text-dark">COTEOFF-00657</a></td>
-                        <td>Html Document</td>
-                        <td>In Prpgress</td>
-                        <td>Zimbabwe</td>
-                        <td>23-May 2023</td>
-                        <td>23 Days</td>
-                        <td><i class="fa fa-angle-right text-danger "></i></td>
-                      </tr>
-
-
-                    </tbody>
-                  </table>
-                </div>
+              <!--  -->
+              <div class="table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th><button id="name">Name</button></th>
+                      <th><button id="type">Type</button></th>
+                      <th><button id="hp">HP</button></th>
+                      <th><button id="attack">Attack</button></th>
+                      <th><button id="defense">Defense</button></th>
+                      <th><button id="spAttack">Sp. Attack</button></th>
+                      <th><button id="spDefense">Sp. Defense</button></th>
+                      <th><button id="speed">Speed</button></th>
+                      <th><button id="total">Total</button></th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-content"></tbody>
+                </table>
               </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12">
-                <button class="btn btn-danger px-4 ml-3 float-right" type="submit"><i class="fa fa-save"></i> Save Form</button>
+            <div class="col-12 table-btns">
+                <button class="btn btn-danger px-4 float-right" type="submit"><i class="fa fa-save"></i> Save Form</button>
                 <button class="btn btn-danger px-4 float-right" type="submit"><i class="fa fa-cloud"></i> Submit Form</button>
             </div>
         </div>
         </div>
       </div>
+
+<!-- ------------------------- -->
+
+
     </div>
     <!-- /.content-wrapper -->
 
@@ -335,6 +318,45 @@
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="dist/js/pages/dashboard.js"></script>
 
+
+  <!-- my script + sorting stuff -->
+  <!-- <scrip src="">
+    
+      function sortTable() {
+      var tables, sort, i, x, y, tableSort;
+      tables = document.getElementById("#SortmyTable");
+      sort= true;
+      while (sort) {
+      sort = false;
+      tblrow = tables.rows;
+      for (i = 1; i < (tblrow.length - 1); i++) {
+      tableSort = false;
+      x = tblrow[i].getElementsByTagName("td")[n];
+      y = tblrow[i + 1].getElementsByTagName("td")[n];
+      if (x.innerHTML.toUpperCase() > y.innerHTML.toUpperCase()) {
+      tableSort = true;
+      break;
+      }
+      }
+      if (tableSort) {
+      tblrow[i].parentNode.insertBefore(tblrow[i + 1], tblrow[i]);
+      sort = true;
+      }
+      }
+      }
+</script> -->
+  <script src="./index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js">
+</script>
 </body>
 
 </html>

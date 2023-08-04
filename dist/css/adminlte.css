@@ -15383,6 +15383,13 @@ body.text-sm .control-sidebar {
     background-color: #fff !important;
     color: #495057 !important;
   }
+  
+}
+
+@media(max-width:768px){
+  .navbar-nav {
+    display: block !important;
+}
 }
 
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer {

@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- Additional Styles -->
+  <link rel="stylesheet" href="additional-styles.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 
@@ -36,16 +38,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav ml-auto">
-                
-
-               
+            <ul class="navbar-nav ml-auto text-sm-center">
+      
                 
                 
                
-                <li class="nav-item  ml-auto">
+                <li class="nav-item  ml-auto ">
                 <h2>e-Approval Forms</h2>
-                <p style="color:grey!important" class="ml-2">Based on the chart of Authority</p>
+                <p style="color:grey!important" class="ml-2 ">Based on the chart of Authority</p>
                 
             </li>
             </ul>
@@ -56,36 +56,27 @@
     <div class="container-fluid">
         <a class="navbar-brand  p-3 text-light" href="/"><i class="fas fa-home"></i></a>
        
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse text-md-start" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-
                <li class="nav-item dropdown ml-auto">
-                <a id="userInfo" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-light">
-                    Fixed Assets
-                </a>
-                <div aria-labelledby="userInfo" class="dropdown-menu">
-                    <a href="transfer.html" class="dropdown-item">
-                        <strong class="d-block text-uppercase headings-font-family" id="flname" >
-                            Fixed Assets
-                        </strong>
-                    </a>
-                   
-                    <div class="dropdown-divider"></div>
-                    <a href="transfer.html" class="dropdown-item"><i class="fa fa-cog"></i>  Fixed Assets</a>
+                  <a id="userInfo" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-light">
+                      Fixed Assets
+                  </a>
+                  <div aria-labelledby="userInfo" class="dropdown-menu">
+                      <a href="transfer.html" class="dropdown-item">
+                          <strong class="d-block text-uppercase headings-font-family" id="flname" >
+                              Fixed Assets
+                          </strong>
+                      </a>
                     
-
-                </div>
-            </li>
-              <li class="nav-item "><a href="#" class="nav-link text-light">Others</a></li>
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-light">Reports</a></li>
-          </ul>
-            <ul class="navbar-nav ml-auto">
-                
-
-               
-                
-                
-               
+                      <div class="dropdown-divider"></div>
+                      <a href="transfer.html" class="dropdown-item"><i class="fa fa-cog"></i>Fixed Assets</a>
+                  </div>
+                </li>
+                <li class="nav-item "><a href="#" class="nav-link text-light">Others</a></li>
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-light">Reports</a></li>
+             </ul>
+            <ul class="navbar-nav ml-auto"> 
                 <li class="nav-item  ml-auto">
                <a href="#" class="nav-link text-light"> <h2 class="text-dark">DEV</h2></a></li>
 
@@ -111,44 +102,113 @@
               <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
               <li class="nav-item  ml-auto"><a href="#" class="nav-link text-light">Badget Shift/UnBadgeted/Early releases</a></li>
           </ul>
-            
         </div>
     </div>
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light ftco-navbar-light" id="ftco-navbar mb-lg-1">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ftco-navbar-light" id="ftco-navbar mb-lg-1">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+                
+
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark">Disposals</a></li>
+                <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-danger"><i class="fa fa-info text-danger "></i></a></li>
+
+                <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-bars text-danger "></i> VIEW COMPLETED</a></li>
+                <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-bars text-danger "></i> VIEW REQUESTS</a></li>
+                <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
+                <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-plus text-danger "></i> CREATE NEW</a></li>
+
+                
+            </ul>
+            <ul class="navbar-nav ml-auto">
+      
+          <form>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search Requisition Number" aria-label="Search">
+            </form>
+          </form>
+            </ul>
+              
+          </div>
+      </div>
+  </nav>
+
+
+  <!-- fixing the 'dispolas' section -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-       <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-              
-
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark">Disposals</a></li>
-              <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-danger"><i class="fa fa-info text-danger "></i></a></li>
-
-              <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-bars text-danger "></i> VIEW COMPLETED</a></li>
-              <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-bars text-danger "></i> VIEW REQUESTS</a></li>
-               <li class="nav-item "><a href="#" class="nav-link text-light"></a></li>
-              <li class="nav-item  ml-auto"><a href="#" class="nav-link text-dark"><i class="fa fa-plus text-danger "></i> CREATE NEW</a></li>
-
-              
-          </ul>
-          <ul class="navbar-nav ml-auto">
-     
-        <form>
-          <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search Requisition Number" aria-label="Search">
-    </form>
+      <a class="navbar-brand" href="#">Disposals</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-          </ul>
-            
-        </div>
+      </div>
     </div>
-</nav>
+  </nav>
+
+
+  <!-- <div class=" disposal-section">
+    <div class="disposal-plus-icon">
+      <h3 class=""><a href="#" class="nav-link text-dark">Disposals</a></h3>
+      <i class="nav-item  ml-auto"><a href="#" class="nav-link text-danger"><i class="fa fa-info text-danger "></i></a></i>
+    </div>
+      
+      <div class="col-5">
+        <form action="" class="ml-5 justify-content-center my-form">
+          <div class="col-lg-5 col-sm-12">
+            <label for="">View Completed</label>
+            <input type="radio" name="view completed" id="">
+          </div>
+          <div class="col-lg-5 col-sm-12">
+            <label for="">View Requested</label>
+            <input type="radio" name="view requests" id="">
+          </div>
+          -->
+          <!-- <input type="search" name="" id="" placeholder="Search Requistion Number" class="home-search-bar"> -->
+          <!-- <div class="col-8 input-group mb-3">
+            <input type="text" class="form-control col-sm-12" placeholder="Search Requistion Number" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+          </div>
+        </form>
+      </div> -->
+    
+</div>
+<!-- ***************************** -->
 
 
 <div class="container-fluid mt-5">
@@ -187,7 +247,7 @@
      <div class="card-body">
         <div class="row">
       <div class="col-md-12">
-        <table class="table table-striped">
+        <table class="table table-striped table-responsive">
   <thead>
     <tr>
       <th scope="col">Request No</th>
